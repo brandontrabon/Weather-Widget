@@ -1,5 +1,5 @@
 /**
- * @description This is the application
+ * @description This is the application startup file.
  */
 
 'use strict';

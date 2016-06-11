@@ -1,0 +1,93 @@
+.weather {
+  border: 1px solid gray;
+  width: 310px;
+  height: 160px;
+  padding: 10px;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+  -webkit-box-shadow: 10px 10px 5px #888888;
+  -moz-box-shadow: 10px 10px 5px #888888;
+  box-shadow: 10px 10px 5px #888888;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  header {
+    height: 20%;
+    font-size: 16pt;
+  }
+
+  main {
+    height: 60%;
+    font-size: 48pt;
+    
+    div:nth-child(1) {
+      display: inline-block;
+      width: 40%;
+
+      div {
+        display: block;
+      }
+    }
+    
+    div:nth-child(2) {
+      display: inline-block;
+      font-size: 8pt;
+
+      div {
+        display: block;
+      }
+    }
+  }
+
+  footer {
+    width: 100%;
+    height: 20%;
+    font-size: 8pt;
+
+    div:not(:last-child) {
+      display: inline-block;
+      width: 19.5%;
+      border-right: 1px solid lightgray;
+
+      div {
+        display: block;
+        text-align: center;
+        border-right: none;
+        width: 100%;
+        padding-left: 0;
+      }
+
+      div:first-child {
+        font-weight: bold;
+      }
+
+      div:last-child {
+        font-weight: normal;
+      }
+    }
+
+    div:last-child {
+      display: inline-block;
+      padding-left: 3px;
+
+      div {
+        display: block;
+        text-align: center;
+        border-right: none;
+        width: 100%;
+        padding-left: 0;
+      }
+
+      div:first-child {
+        font-weight: bold;
+      }
+
+      div:last-child {
+        font-weight: normal;
+      }
+    }
+  }
+}
