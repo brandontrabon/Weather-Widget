@@ -4,25 +4,40 @@
   height: 160px;
   padding: 10px;
 
+  /* Used to make the rounded edges on the control */
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
 
+  /* Used to put the shadow on the control */
   -webkit-box-shadow: 10px 10px 5px #888888;
   -moz-box-shadow: 10px 10px 5px #888888;
   box-shadow: 10px 10px 5px #888888;
 
+  /*
+   Used to center the control horizontally and vertically; if this control is
+   contained within a div it must have a relative position; and a specific
+   width and height.
+  */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -80px 0 0 -155px;
+
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
+  /* Used to style the City and State on the control */
   header {
     height: 20%;
     font-size: 16pt;
   }
 
+  /* Used to style the current temperature and condition section of the control */
   main {
     height: 60%;
     font-size: 48pt;
-    
+
+    /* Styles for the temperature section */
     div:nth-child(1) {
       display: inline-block;
       width: 40%;
@@ -31,7 +46,8 @@
         display: block;
       }
     }
-    
+
+    /* Styles for the condition section */
     div:nth-child(2) {
       display: inline-block;
       font-size: 8pt;
@@ -42,16 +58,19 @@
     }
   }
 
+  /* Styles for the 5 day forecast section of the control */
   footer {
     width: 100%;
     height: 20%;
     font-size: 8pt;
 
+    /* Each forecast section except the last child needs to be given a width */
     div:not(:last-child) {
       display: inline-block;
       width: 19.5%;
       border-right: 1px solid lightgray;
 
+      /* This will style the inner div's for the forecast sections */
       div {
         display: block;
         text-align: center;
@@ -60,18 +79,17 @@
         padding-left: 0;
       }
 
+      /* The first child's text should be bold */
       div:first-child {
         font-weight: bold;
-      }
-
-      div:last-child {
-        font-weight: normal;
       }
     }
 
+    /* The style for the last child needs to be different than the rest of
+    them; no width or border is needed but a left padding is required */
     div:last-child {
       display: inline-block;
-      padding-left: 3px;
+      padding-left: 6px;
 
       div {
         display: block;
@@ -83,10 +101,6 @@
 
       div:first-child {
         font-weight: bold;
-      }
-
-      div:last-child {
-        font-weight: normal;
       }
     }
   }

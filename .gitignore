@@ -1,4 +1,4 @@
 app/bower_components
+app/styles/*.css
+app/styles/*.css.map
 .idea/
-*.css
-*.css.map

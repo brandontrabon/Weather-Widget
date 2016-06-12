@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/brandontrabon/Weather-Widget#readme",
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
     "requirejs": "^2.2.0"
   }
 }
