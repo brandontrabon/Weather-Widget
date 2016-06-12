@@ -6,6 +6,6 @@ var gulp = require('gulp');
 var shell = require('gulp-shell');
 
 gulp.task('build', shell.task([
-    'r.js -o app/build.js',
-    'r.js -o app/build.css.js'
+    'node_modules/requirejs/bin/r.js -o app/build.js',
+    'node_modules/requirejs/bin/r.js -o app/build.css.js'
 ]));
