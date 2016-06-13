@@ -1,0 +1,12 @@
+%div{:class => "weather"}
+  %header {{vm.data.city}}, {{vm.data.state}}
+  %main
+    %div {{vm.data.temperature}}&deg;
+    %div
+      %div
+        %img{:src => "{{vm.data.imageUrl}}"}
+      %div {{vm.data.condition}}
+  %footer
+    %div{"ng-repeat" => "item in vm.data.forecasts track by $index"}
+      %div {{item.day}}
+      %div {{item.high}}&deg; / {{item.low}}&deg;
