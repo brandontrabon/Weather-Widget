@@ -3,9 +3,10 @@ A widget that displays weather data from any city/state combination and displays
 
 ## Project Setup
 This project uses bower and npm to manage certain dependencies so after cloning the repository run the following commands.
-
-`bower install`
-`npm install`
+```
+bower install
+npm install
+```
 
 ## Project Architecture
 This project uses require.js to manage script dependencies; this keeps you from having to worry about keeping your scripts in the proper order.
