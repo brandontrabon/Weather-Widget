@@ -19,6 +19,12 @@ You'll notice the use of IIF's (Immediately Invoked Functions) throughout the ap
 })();
 ```
 
+The project makes use of Angular's template cache; this makes distributing the library much simpler since the templates don't have to be managed by the end user.
+
+You will notice 2 different services used for the weather directive. There is a design purpose for this; the service for the directive is the work horse of the directive. The purpose is to not put too much code into the directive or the controller.
+
+The second service is for getting the actual data from the service and only returning the pieces of data that are needed to give the first service less to process.
+
 ## Gulp
 The project is setup to create a minified version of the library using gulp; gulp is one of the libraries installed by the npm install. The gulp command used to build the project library looks like the following.
 
@@ -55,3 +61,5 @@ Thoughts on future upgrades are
 - The width and height of the control could be set through directive attributes
 - The number of forecast days could be set through a directive attribute
 - Instead of directive attributes there could be settings dialog to set all of the suggested settings
+    - This would allows for settings to be changed directly on the form
+- Add a refresh button to the control to allow instant updating of data
