@@ -23,7 +23,7 @@ The project makes use of Angular's template cache; this makes distributing the l
 
 You will notice 2 different services used for the weather directive. There is a design purpose for this; the service for the directive is the work horse of the directive. The purpose is to not put too much code into the directive or the controller.
 
-The second service is for getting the actual data from the service and only returning the pieces of data that are needed to give the first service less to process.
+The second service is for getting the actual data from the weather API and only returning the pieces of data that are needed to give the first service less to process.
 
 ## Gulp
 The project is setup to create a minified version of the library using gulp; gulp is one of the libraries installed by the npm install. The gulp command used to build the project library looks like the following.
